@@ -2,72 +2,75 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>inwoo</title>
+    <title>연습중</title>
     <style>
       *{
         text-decoration: none;
+        margin: 0 auto;
+        padding: 0 auto;
       }
-    #home{
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      background-color: rgb(80, 175, 230);
-      position: fixed;
-      text-align: center;
-      line-height: 100px;
-      z-index: 999;
-      cursor: pointer;
-      margin-left: 88%;
-      margin-top: 10%;
-      color: white;
+    body{
+      margin-right: 100px;
     }
-        #header{
-        margin-top: -8px;
-        grid-area: header;
-        background-image: url('backimg1.jpg');
-        background-size: contain;
-        width: 800px;
-        height: 1058px;
+    .main-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 14px;
+      background-color: #3a437f;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    #header{
+      margin-top: -8px;
+      grid-area: header;
+      background-image: url('backimg1.jpg');
+      background-size: contain;
+      width: 1100px;
+      height: 1445px;
+        
     }
     #header .backimg img{
-      width: 800px;
+      width: 1000px;
+      height: 1250px;
     }
 
     .maintitle{
       position: absolute;
       text-align: center;
-      font-size: 100px;
-      margin-left: 25px;
+      font-size: 130px;
+      margin-left: 64px;
       color: rgb(204, 255, 235) ;
-      margin-top: -140px;
+      margin-top: 20px;
     }
     .maintitle h5{
-      margin-top: -200px;
+      margin-top: -80px;
       margin-left: 9px;
       width: 97%;
       text-align:justify;
     }
-    .maintitle h5::after{
+    .maintitle h5:after{
       width: 100%;
       display: inline-block;
       content: '';
     }
-
-    #nav {
-      grid-area: nav;
-      position: absolute;
-    }
     .navbox{
-      width: 232px;
-      height: 110px;
+      width: 240px;
+      height: 140px;
       background-color: ivory;
       float: left;
-      margin-left: 22px;
+      margin-left: 26px;
       border: 2px solid gray;
-      margin-top: 920px;
+      margin-top: 1280px;
     }
     .navbox_head{
-      width: 232px;
+      width: 240px;
       height: 40px;
       border-bottom: 2px solid gray;
       display: block;
@@ -102,6 +105,9 @@
       margin-top: 8px;
       margin-left: -20px;
     }
+    .navbox li{
+      margin-bottom: 3px;
+    }
     .navbox li a{
       text-decoration: none;
       color: black;
@@ -112,20 +118,19 @@
     }
 
     #article {
-      width: 800px;
-      height: 1050px;
+      width: 550px;
+      height: 750px;
       background-color:slategrey;     
       grid-area: article;
-      margin-top: -10px;
     }
     #gagupage{
-      width: 800px;
-      margin-top: 30px;
-      margin-left: 22px;
+      width: 550px;
+      margin-top: 40px;
+      margin-left: 20px;
     }
     .gagubox{
-      width: 250px;
-      height: 330px;
+      width: 170px;
+      height: 224px;
       float: left;
     }
     .gagusubbox{
@@ -133,34 +138,40 @@
       height: 80%;
       background-color: aliceblue;
       float: left;
-      margin-top: -300px;
-      margin-left: 25px;
+      margin-top: -205px;
+      margin-left: 16px;
     }
     .gagusubbox1{
       width: 80%;
       height: 56%;
       background-color: aliceblue;
       float: left;
-      margin-top: -217px;
-      margin-left: 25px;
+      margin-top: -149px;
+      margin-left: 15px;
     }
     .gagusubbox h5{
       text-align: center;
-      font-size: 1rem;
+      font-size: 0.7rem;
+      margin-top: 20px;
     }
     .gagusubbox p{
       text-align: justify;
       width: 85%;
       margin-left: 7.5%;
+      font-size: 0.6rem;
+      margin-top: 10px;
     }
     .gagusubbox1 h5{
       text-align: center;
-      font-size: 1rem;
+      font-size: 0.7rem;
+      margin-top: 20px;
     }
     .gagusubbox1 p{
       text-align: justify;
       width: 85%;
       margin-left: 7.5%;
+      font-size: 0.6rem;
+      margin-top: 10px;
     }
     .gagubox img{
       width: 100%;
@@ -170,24 +181,25 @@
     }
     .gagubox .gagutitle{
       width: 250px;
-      height: 92px;
+      height: 63px;
       float: left;
     }
     .gagubox .gagutitle h6{
-      font-size: 30px;
+      font-size: 20px;
       margin: 30px 20px;
       color: ivory;
     }
     .gagubox .gagutext{
-      width: 250px;
-      height: 238px;
+      width: 170px;
+      height: 165px;
       background-color: white;
       float: left;
     }
     .gagubox .gagutext p{
-      margin: 30px 20px;
+      margin: 20px 15px;
       text-align: justify;
-      line-height: 23px;
+      line-height: 13px;
+      font-size: 12px;
     }
     
 
@@ -195,14 +207,359 @@
 
     #aside {
         grid-area: aside;
-        width: 800px;
-        height: 1000px;
+        width: 550px;
+        height: 750px;
         background-color: aliceblue;
     }
     .bluegagu img{
       position: absolute;
     }
     .bbb1 img:hover, .bbb2 img:hover, .bbb4 img:hover{
+      transition: all 3s;
+      transform: rotate(360deg);
+    }
+    .bbb3 img{
+      transform: translateY(0);
+      transition-property: transform;
+      transition-duration: 0.5s;
+      transition-delay: 0.1s;
+      transition-timing-function: ease-in;
+    }
+    .bbb3 img:hover{
+      transform: translateY(300px);
+    }
+    .bbb5 img{
+      transform: translateY(0);
+      transition-property: transform;
+      transition-duration: 0.5s;
+      transition-delay: 0.1s;
+      transition-timing-function: ease-in;
+    }
+    .bbb5 img:hover{
+      transform: translateY(500px);
+      transition: all 1s;
+      height: 10%;
+    }
+    .bbb8 img{
+      transform: translateX(0);
+      transition-property: transform;
+      transition-duration: 0.5s;
+      transition-delay: 0.1s;
+      transition-timing-function: ease-in;
+    }
+    .bbb8 img:hover{
+      transform: translateX(2000px);
+      transition: all 3s;
+    }
+    .bbb6 img{
+      transform: translateX(0);
+      transition-property: transform;
+      transition-duration: 0.5s;
+      transition-delay: 0.1s;
+      transition-timing-function: ease-in;
+    }
+    .bbb6 img:hover{
+      transform: translateX(-2000px);
+      transition: all 3s;
+    }
+    .bbb7 img{
+      transform: translateY(0);
+      transition-property: transform;
+      transition-duration: 0.5s;
+      transition-delay: 0.1s;
+      transition-timing-function: ease-in;
+    }
+    .bbb7 img:hover{
+      transform: translateY(-500px);
+      transition: all 3s;
+    }
+    .bbb1 img{
+      width: 120px;
+      margin-top: 50px;
+      margin-left: 36px;
+    }
+    .bbb2 img{
+      width: 250px;
+      margin-top: 580px;
+      margin-left: 280px;
+    }
+    .bbb3 img{
+      width: 100px;
+      margin-top: 420px;
+      margin-left: 400px;
+    }
+    .bbb4 img{
+      width: 150px;
+      margin-top: 440px;
+      margin-left: 280px;
+    }
+    .bbb5 img{
+      width: 167px;
+      margin-top: 360px;
+      margin-left: 30px;
+    }
+    .bbb6 img{
+      width: 345px;
+      margin-top: 190px;
+      margin-left: 60px;
+    }
+    .bbb7 img{
+      width: 330px;
+      margin-top: 260px;
+      margin-left: 110px;
+    }
+    .bbb8 img{
+      width: 120px;
+      margin-top: 30px;
+      margin-left: 400px;
+    }
+    .ttxx{
+      position: absolute;
+      text-align: center;
+      margin-top: 55px;
+      margin-left: 160px;
+      width: 250px;
+    }
+    .ttxx h3{
+      font-size: 35px;
+    }
+    .ttxx h6{
+      margin-top: 4px;
+      font-size: small;
+      font-size: 11px;
+    }
+    .ttxx p{
+      margin-top: 10px;
+      font-size: 11px;
+    }
+    .ttxxsub{
+      width: 205px;
+      margin-top: 600px;
+      margin-left: 30px;
+      font-size: xx-small;
+      text-align: justify;
+      font-size: 6px;
+    }
+    .ttxxsub:hover{
+      transform: scale(150%);
+      background-color: #ddd;
+      border: 5px solid #ddd;
+    }
+
+ footer {
+      width: 100vw;
+      background-color: #222;
+      color: white;
+      padding: 30px 20px 20px;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+      box-sizing: border-box;
+      margin-top: 60px;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .footer-left, .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+    }
+
+    .footer-logo img {
+      width: 80px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .footer-section h4 {
+      margin: 0 0 5px;
+      font-size: 16px;
+    }
+
+    .footer-section address {
+      font-style: normal;
+      line-height: 1.6;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .footer-section address span {
+      display: block;
+    }
+
+    .footer-button {
+      margin-top: 10px;
+      display: inline-block;
+      background-color: #fff;
+      color: #000;
+      text-decoration: none;
+      padding: 8px 12px;
+      font-size: 14px;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+      width: fit-content;
+    }
+
+    .footer-button:hover {
+      background-color: #ddd;
+    }
+
+    .copyright {
+      text-align: right;
+      padding-right: 20px;
+      margin-top: 5px;
+      font-size: 12px;
+      color: #aaa;
+    }
+
+
+    
+
+
+    
+    .container{
+      width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-areas: 
+      "header header"
+      "article aside"
+      "footer footer";
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 1000px) {
+      *{
+        margin: 0 auto;
+        padding: 0 auto;
+      }
+  .container {
+    grid-template-areas: 
+      "header"
+      "article"
+      "aside"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+  .main-button {
+      left: 100px;
+    }
+  #header{
+    width: 800px;
+    height: 1050px;
+  }
+  #header .maintitle{
+    margin-top: 40px;
+    font-size: 90px;
+  }
+  #header .maintitle h5{
+    margin-top: -60px;
+    font-size: 50px;
+  }
+  .navbox{
+      width: 170px;
+      height: 120px;
+      margin-top: 920px;
+      margin-left: 20px;
+    }
+  .navbox_head{
+    width: 170px;
+  }
+  .navbox_head p{
+    font-size: 1rem;
+    margin-top: 11px;
+  }
+  .navbox_head a{
+    font-size: 0.7rem;
+    margin-top: 14px;
+  }
+
+  .navbox ul{
+    font-size: 0.8rem;
+    margin-left: -30px;
+  }
+  .navbox li{
+    margin-bottom: 2px;
+  }
+
+  #article, #aside{
+    width: 800px;
+    height: 1050px;
+  }
+  #article #gagupage{
+    width: 800px;
+  }
+  #article #gagupage .gagubox{
+    width: 250px;
+    height: 330px;
+  }
+  #article #gagupage .gagusubbox{
+    width: 80%;
+    height: 80%;
+    margin-top: -305px;
+    margin-left: 24px;
+  }
+  #article #gagupage .gagusubbox h5{
+    width: 85%;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  #article #gagupage .gagusubbox p{
+    width: 85%;
+    font-size: 0.8rem;
+    margin-top: 20px;
+  }
+  #article #gagupage .gagusubbox1{
+    width: 80%;
+    height: 56%;
+    margin-top: -220px;
+    margin-left: 24px;
+  }
+  #article #gagupage .gagusubbox1 h5{
+    width: 85%;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  #article #gagupage .gagusubbox1 p{
+    width: 85%;
+    font-size: 0.8rem;
+    margin-top: 20px;
+  }
+  .gagubox .gagutitle{
+    width: 100%;
+    height: 28%;
+  }
+  .gagubox .gagutitle h6{
+    width: 100%;
+    font-size: 1.8rem;
+  }
+  .gagubox .gagutext{
+    width: 100%;
+    height: 72%;
+  }
+  .gagubox .gagutext p{
+    font-size: 1rem;
+    line-height: 24px;
+  }
+
+  #aside .bluegagu .ttxxmain{
+    margin-top: 40px;
+    margin-right: 30px;
+  }
+  #aside .bluegagu .ttxxmain h6{
+    margin-top: 3px;
+  }
+  #aside .bluegagu .ttxxmain p{
+    margin-top: 10px;
+  }  
+  .bbb1 img:hover, .bbb2 img:hover, .bbb4 img:hover{
       transition: all 3s;
       transform: rotate(360deg);
     }
@@ -327,116 +684,38 @@
       text-align: justify;
     }
 
-
-    #footer{
-      width: 800px;
-      height: 80px;
-      text-align: center;
-      grid-area: footer;
-      background-color: rgb(206, 207, 225);
-    }
-    #footer .logo{
-      width: 150px;
-      height: 100%;
-      float: left;
-    }
-    #footer .logo h1{
-      text-align: center;
-      margin-top: 13px;
-      color: rgba(128, 128, 128, 0.45);
-    }
-    #footer .logo h5{
-      width: 116px;
-      text-align: justify;
-      margin-top: -23px;
-      margin-left: 15px;
-      color: rgba(128, 128, 128, 0.45);
-    }
-    #footer .logo h5::after{
-      width: 100%;
-      display: inline-block;
-      content: '';
-      text-decoration: none;
-    }
-    #footer .imim{
-      width: 500px;
-      height: 100%;
-      float: left;
-      color: rgba(128, 128, 128, 0.45);
-    }
-    #footer .sitetop{
-      width: 150px;
-      height: 100%;
-      float: left;
-    }
-    #footer .sitetop select{
-      background-color:rgb(214, 245, 255);
-      margin-top: 30px;
-    }
-    
-
-
-    .container{
-      width:800px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-areas: 
-      "header"
-      "nav"
-      "article"
-      "aside"
-      "footer";
-      grid-template-columns: 1fr;
-    }
-    /* @media (max-width: 980px) {
-  .container {
-    width: 800px;
-    grid-template-areas: 
-      "header header"
-      "nav nav"
-      "article aside"
-      "footer footer";
-    grid-template-columns: 1fr 1fr;
+  footer{
+    width: 100vw;
   }
-  #home{
-    display: none;
-  }
-  #article{
-    width: 400px;
-    height: 525px;
-    margin-top: -3px;
-  }
-  #gagupage{
-      width: 400px;
-      height: 525px;
-      margin-top: 15px;
-      margin-left: 11px;
-    }
-  .gagubox{
-      width: 125px;
-      height: 165px;
-      background-color: aqua;
-      float: left;
-    }
+  .footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
 
-  #aside{
-    width: 400px;
-    height: 525px;
-        margin-top: -3px;
-  }
-} */
+      .footer-left, .footer-right {
+        align-items: center;
+      }
+
+      .footer-logo img {
+        margin: 0 auto 10px;
+      }
+
+      .footer-button {
+        margin: 10px auto 0;
+      }
+}
     </style>
 </head>
 <body>
-    <div id="home"><a href="https://inugim58.github.io/gamja/">돌아가기</a></div>
+  <a href="https://inugim58.github.io/gamja/" class="main-button">🏠MAIN PAGE</a>
     <div class="container">
         <div id="header">
           <div class="maintitle">
             <h1>INTERNI</h1>
             <h5>&      D      e      c      o      r</h5>
           </div>
-          <!-- <div class="backimg"><img src="backimg1.jpg" alt="1"></div> -->
-        </div>
+          
+        
         <div id="nav">
           <div class="navbox">
             <div class="navbox_head">
@@ -447,6 +726,7 @@
               <li><a href="">- 가구 조립 시 꿀팁 #5</a></li>
               <li><a href="">- 의자 위에 고양이 5마리</a></li>
               <li><a href="">- 책상 조립 5분안에 하는법</a></li>
+              <li><a href="">- 의자 주문했는데 이거 뭐냐?</a></li>
             </ul>
           </div>
           <div class="navbox">
@@ -458,6 +738,7 @@
               <li><a href="">- 영유아 책상 판매합니다.</a></li>
               <li><a href="">- 새 의자 급처분</a></li>
               <li><a href="">- 소파랑 탁자 묶어서 팝니다.</a></li>
+              <li><a href="">- 파랑색 가구들 삽니다.</a></li>
             </ul>
           </div>
           <div class="navbox">
@@ -469,9 +750,22 @@
               <li><a href="">- 문의 시 필수 양식</a></li>
               <li><a href="">- 자주 문의하는 내용</a></li>
               <li><a href="">- 문의 시 주의사항</a></li>
+              <li><a href="">- 환불에 관한 공지</a></li>
             </ul>
           </div>
-
+          <div class="navbox">
+            <div class="navbox_head">
+            <p>정보 게시판</p>
+            <a href="">더보기</a>
+            </div>
+            <ul>
+              <li><a href="">- 가구 구매 시 해야하는것</a></li>
+              <li><a href="">- 가구 조립 시 준비할것들</a></li>
+              <li><a href="">- 조립하고 부품이 남는다면?</a></li>
+              <li><a href="">- 소재별 특징 정리</a></li>
+            </ul>
+          </div>
+        </div>
         </div>
         <div id="article">
           <div id="gagupage">
@@ -565,27 +859,42 @@
 어두운 밤 침대 머리맡에 둘 독서등으로 제격이다. 5 알렉산더 지라드 Alexander Girard, 그래픽 프린트 필로우 Graphic Print Pillow 비비드한 푸른색과 마름모꼴 패턴이 결합해 뱀의 몸통을 유쾌하게 장식한 쿠션 필로. 단순하면서도 추상적인 그래픽이 인상적이다. 6 피에터 보스토엔 Pieter Bostoen &질스 마익 나방기 Gilles Mayk Navangi, 더스-스네이크 Dearth-Snake 멸종위기 뱀에 대한 관심을 촉구하기 위해 탄생한 도자기 화병. 모든 제품을 수제로 제작하여 각각의 디테일이 조금씩 다른 것이 특징이다. 7 오케이제이 스튜디오 Okej Studio, 클라우드 블루 스퀴글 러그 Cloud Blue Squiggle Rug 푹신한 양모 소재의 디자인 러그는 똬리를 튼 뱀 모양 캐릭터를 떠올리게 한다. 8 펜디 까사 FENDI CASA, 미세스 파시팔 암체어 Mrs Parsifal Armchair 두 가지 톤의 블루 컬러 매치로 균형 있는 시각적 즐거움을 선사하는 암체어. 팔걸이 부분에는 펜디 시그니처 페퀸 패브릭을 사용했다.</p>
           </div>
         </div>
-        <div id="footer">
-          <div class="logo">
-            <a href="#header">
-            <h1>INTERNI</h1>
-            <h5>&      D      e      c      o      r</h5>
-            </a>
+
+</div>
+
+
+       <footer>
+        <div class="footer">
+          <div class="footer-left">
+            <div class="footer-logo">
+              <img src="MG_logo.png" alt="MC"/>
+            </div>
+            <div class="footer-section">
+              <h4>마리끌레르</h4>
+              <address>
+                서울특별시 강남구 봉은사로 226<br>
+                <span>대표번호: 02.3458.7300</span>
+                <span>팩스번호: 02.3458.7119</span>
+                <span>정기구독문의: 02.3458.7122</span>
+              </address>
+            </div>
           </div>
-          <div class="imim">
-            <p>출처 : 전자잡지 인테르니앤데코, 메종, 핀터레스트<br>사이트 제작자 22557012 김인우</p>
+
+          <div class="footer-right">
+            <div class="footer-section">
+              <h4>사업자 정보</h4>
+              <address>
+                <span>사업자등록번호: 211-86-54814</span>
+                <span>통신판매업신고제: 2007-3210121-30-2-10512호</span>
+              </address>
+              <a href="https://www.marieclairekorea.com/tag/%EB%A9%94%EC%A2%85/" class="footer-button">메종 마리끌레르 온라인 바로가기 →</a>
+            </div>
           </div>
-          <div class="sitetop">
-            <select name="프로그래밍 조원들">
-              <option value="">프로그래밍 조원들</option>
-              <option value="">김인우</option>
-              <option value="">백진우</option>
-              <option value="">임이지</option>
-              <option value="">김지현</option>
-            </select>
+          <div class="copyright">
+            Copyright © 2015 MCK Publishing Co. Ltd. All Rights Reserved.
           </div>
-          </div>  
         </div>
-     </div>
+    </footer>
+     
 </body>
 </html>
